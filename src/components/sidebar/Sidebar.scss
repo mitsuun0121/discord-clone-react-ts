@@ -79,11 +79,14 @@
       margin-left: -3px;
 
       .sidebarAccount {
+
         display: flex;
         align-items: center;
 
         img {
           width: 60px;
+          border-radius: 50%;
+          cursor: pointer;
         }
 
         .accountName {
