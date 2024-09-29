@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDB-8jeYucL57HUU5Mv4kTpdR9RRCgb3dQ",
-  authDomain: "discord-colne.firebaseapp.com",
-  projectId: "discord-colne",
-  storageBucket: "discord-colne.appspot.com",
-  messagingSenderId: "215852397082",
-  appId: "1:215852397082:web:b71833e80bcf8044e997a3",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
